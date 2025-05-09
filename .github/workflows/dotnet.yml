@@ -24,6 +24,9 @@ jobs:
       - name: Build
         run: dotnet build --no-restore
 
+      - name: Publish
+        run: dotnet publish --configuration Release --output ./output
+
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
         with:
