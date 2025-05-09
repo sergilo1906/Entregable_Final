@@ -31,4 +31,4 @@ jobs:
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.sergi }}
-          publish_dir: ./wwwroot
+          publish_dir: ./output/wwwroot
